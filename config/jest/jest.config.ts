@@ -32,7 +32,7 @@ export default {
     moduleDirectories: [
         'node_modules',
     ],
-    "moduleNameMapper": {
+    moduleNameMapper: {
         "\\.s?css$": "identity-obj-proxy",
         "\\.svg": path.resolve(__dirname, 'jestEmptyComponent.tsx')
     },
