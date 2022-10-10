@@ -38,8 +38,8 @@ export const Modal = (props: ModalProps) => {
     }, [onClose]);
 
     // Новые ссылки!!!
-    const onKeyDown = useCallback((e: KeyboardEvent) => {
-        if (e.key === 'Escape') {
+    const onKeyDown = useCallback((event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
             closeHandler();
         }
     }, [closeHandler]);
@@ -68,7 +68,7 @@ export const Modal = (props: ModalProps) => {
     return (
         <Portal>
             <div className={classNames(cls.Modal, mods, [className])}>
-                <div className={cls.overlay} onClick={closeHandler} onKeyDown={closeHandler}>
+                <div className={cls.overlay} onClick={closeHandler}>
                     <div
                         className={cls.content}
                         onClick={onContentClick}
