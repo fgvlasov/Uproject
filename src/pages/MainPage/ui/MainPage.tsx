@@ -1,18 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Counter } from 'entities/Counter';
 
-interface MainPageProps {
-    className?: string
-}
-
-const MainPage = ({ className }: MainPageProps) => {
+const MainPage = () => {
     const { t } = useTranslation();
 
     return (
-        <div className={className}>
+        <div>
             {t('Главная страница')}
-            <Counter />
         </div>
     );
 };
