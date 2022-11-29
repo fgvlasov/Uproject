@@ -7,12 +7,12 @@ import { updateProfileData } from './updateProfileData';
 
 const data = {
     username: 'admin',
-    age: 40,
-    country: Country.Finland,
-    lastname: 'Vlasov',
-    first: 'Fedor',
-    city: 'Jyvaskyla',
-    currency: Currency.EUR,
+    age: 22,
+    country: Country.Ukraine,
+    lastname: 'ulbi tv',
+    first: 'asd',
+    city: 'asf',
+    currency: Currency.USD,
 };
 
 describe('updateProfileData.test', () => {
