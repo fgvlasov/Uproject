@@ -1,7 +1,7 @@
-import React, { Suspense, useCallback } from 'react';
+import React, { memo, Suspense, useCallback } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { AppRoutesProps, routeConfig } from 'shared/config/routeConfig/routeConfig';
 import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
+import { AppRoutesProps, routeConfig } from 'shared/config/routeConfig/routeConfig';
 import { RequireAuth } from 'app/providers/router/ui/RequireAuth';
 
 const AppRouter = () => {
@@ -29,4 +29,4 @@ const AppRouter = () => {
     );
 };
 
-export default AppRouter;
+export default memo(AppRouter);
